@@ -1,0 +1,297 @@
+html{
+    color: white;
+    /* padding: 8px; */
+    scroll-behavior: smooth;
+}
+
+.btn{
+    width: 170px;
+    display: inline-block;
+}
+
+.btn2{
+    width:130px;
+    margin-left: 10px;
+    border-radius: 14px;
+}
+
+
+ .title h1{
+    text-align: center;
+    color: #59CAF3;
+}
+
+
+ .services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+}
+
+ .services .card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #3F3D3D;
+    cursor: pointer;
+    
+
+}
+
+ .services .card img{
+    margin-bottom: 20px;
+}
+
+ .services .card h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+ .services .card p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}   
+
+ .services .card:hover{
+    transition: 0.4s ease;
+    background-color: #59CAF3;
+}
+
+#services{
+    margin-bottom: 150px;
+}
+
+@media(max-width: 940px){
+     .services{
+            display: flex;
+            flex-direction: column;
+        }
+
+         .services .card{
+            width: 95%;
+            display: flex;
+            margin: 20px 0;
+            
+        }
+
+         .title h1{
+            font-size: 30px;
+        }
+
+        .kocak{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .kocak2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+}
+
+
+.judul{
+    margin: auto;
+    max-width: 36rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+.img{
+    width: 500px;
+    /* margin-bottom: 10px; */
+    background-color: #3F3D3D;
+    border-radius: 6px;
+    overflow: hidden;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.aca{
+    margin: 25px auto;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.kocak{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+
+
+.kocak .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 70px;
+    border-radius: 10px;
+    background-color: #3F3D3D;
+    cursor: pointer;    
+    overflow: hidden;
+}
+
+.kocak .card img{
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.kocak .card img:hover{
+    transform: scale(1.1);
+}
+
+.kocak .card h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.kocak .card p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}   
+
+
+.project{
+    margin-bottom: 70px;
+
+}
+
+
+
+@media (min-width: 768px) {
+    .md\:w-1\/2 {
+        width: 50%;
+    }
+}
+
+
+
+/* Contact Style */
+.row{
+    display: flex;
+    margin-bottom: 120px;
+    /* background-color: rebeccapurple; */
+    /* margin: 15px auto; */
+}
+
+.contact-left{
+    width: 100%;
+    flex-basis: 35%;
+}
+
+
+.contact-left p{
+    width: 100%;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon p{
+    /* margin:  10px; */
+    margin-bottom: 18px;
+    margin-left: 12px;
+    font-size: medium;
+    font-weight: 400;
+    color: #64748b;
+    font-size: 16px;
+}
+
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.social-icons svg{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+
+.contact-right{
+    flex-basis: 50%;
+     width: 100%; 
+     /* background-color: rebeccapurple; */
+     margin-left: 100px;
+}
+
+.contact-right form{
+    display: flex;
+    flex-direction:column;
+    /* width: 100%; */
+    margin-left: 150px;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+
+@media (max-width:940px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .contact-right,.contact-left{
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-right form{
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .contact-right{
+        width: 100%;
+        margin-top: 20px;
+        /* background-color: rebeccapurple; */
+    }
+
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #0F1320;
+    font-weight:500;
+
+}
